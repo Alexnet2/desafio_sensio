@@ -22,7 +22,7 @@ export const create = async (req: Request, res: Response) => {
       },
     });
 
-    if (company.length) throw new RouteException("CNPJ já existe", 400);
+    if (company.length) throw new RouteException("CNPJ já existe", 302);
 
     company = await (await CompanyRepository).save(req.body);
     res.status(201).send(company);

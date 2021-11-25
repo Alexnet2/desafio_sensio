@@ -14,6 +14,7 @@ const Companies: FC = () => {
   const history = useHistory();
   useEffect(() => {
     api.get("/companies").then((resp) => {
+      console.log(resp.data);
       setCompanies(resp.data);
     });
   }, []);
@@ -22,7 +23,7 @@ const Companies: FC = () => {
     setMessage(message);
     setTimeout(() => {
       setMessage("");
-    },1000*1);
+    }, 1000 * 1);
   }, []);
   const search = async () => {
     try {
@@ -34,6 +35,7 @@ const Companies: FC = () => {
       const resp = await api.get(
         `/companies/details/${cnpj.replace(/[^\d]+/g, "")}`
       );
+      await api.post("/companies", { cnpj: cnpj.replace(/[^\d]+/g, "") }).catch(err=>{});
       history.push({
         pathname: "/view",
         state: resp.data,

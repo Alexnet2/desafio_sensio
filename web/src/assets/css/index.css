@@ -114,9 +114,14 @@ body {
 }
 .companiesView-title {
   font-weight: bold;
-  margin-bottom: 0rem!important;
+  margin-bottom: 0rem !important;
 }
 
-.companiesView-text{
-    font-size: 0.8rem;
+.companiesView-text {
+  font-size: 0.8rem;
+}
+
+.googleMaps {
+  width: 100%;
+  height: 30vh;
 }
