@@ -1,0 +1,122 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+#root {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.companies-container {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.companies-container > p {
+  color: red;
+  text-align: center;
+}
+
+.addButton {
+  align-self: flex-end;
+}
+.addButton button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #0e9601;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 3px 15px;
+}
+.addButton button:hover {
+  background-color: #14d602;
+}
+
+.companiesAdd-container {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.groupButton {
+  display: flex;
+  gap: 1rem;
+  align-self: flex-end;
+}
+
+.success {
+  background-color: #0e9601;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 3px 15px;
+}
+.danger {
+  background-color: #b80303;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 3px 15px;
+}
+
+#basic-addon2 {
+  font-size: 0.8rem;
+}
+
+.search-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.search {
+  width: 70%;
+}
+
+.search button {
+  border-style: none;
+  background-color: blue;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 1rem !important;
+}
+
+.search button:hover {
+  background-color: rgb(46, 46, 250);
+}
+.companiesView-container {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.companiesView-label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.companiesView-input {
+  background-color: #fff !important;
+  font-size: 0.7rem !important;
+}
+
+.companiesView-container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.companiesView-title {
+  font-weight: bold;
+  margin-bottom: 0rem!important;
+}
+
+.companiesView-text{
+    font-size: 0.8rem;
+}
